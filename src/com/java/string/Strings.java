@@ -92,6 +92,6 @@ public class Strings {
         System.out.println(Long.valueOf(s11));  //o/p:9494202257  --if the given string contains int or long data type, valueOf method will convert them to the int or long  and store the data in given datatype
         System.out.println(s14.isEmpty());  //o/p:true --isEmpty method checks the length of the string, returns only true if the length of the string is 0, that means initialized without any characters or spaces
         System.out.println(s13.isBlank());  //o/p:true --isBlank method will remove the spaces and checks any characters present in the string
-
+        
     }
 }

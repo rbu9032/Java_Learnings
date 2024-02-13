@@ -3,6 +3,7 @@ package com.java.string;
 import java.util.Arrays;
 import java.util.Scanner;
 
+
 public class StringAssignments {
 
     private static String getReverseString(String str) {
@@ -90,7 +91,7 @@ public class StringAssignments {
         System.out.println("Input string:" +str);
         System.out.println("Output string:" +revStr);*/
         //another approach for reversing all words in a string by using a method
-    /*    System.out.println("Enter the string:");
+       /* System.out.println("Enter the string:");
         String str = sc.nextLine();
         String revStr = "";
         String[] words = str.split(" ");
@@ -288,7 +289,7 @@ public class StringAssignments {
         input:JavaJ           output:It is a palindrome
         input:Javaj           output:It is not a palindrome
         input:hyrtutorials    output:It is not a palindrome
-        */
+
         System.out.println("Enter the string:");
         String str = sc.nextLine();
         String revStr ="";
@@ -299,7 +300,21 @@ public class StringAssignments {
             System.out.println("It is a palindrome");
         }else{
             System.out.println("It is not a palindrome");
+        }*/
+
+        //Assignment-16
+        //java program to reverse words in a string
+        //Input: how are you    Output: you are how
+        /*System.out.println("Enter the input string:");
+        String str = sc.nextLine();
+        System.out.println("Input String:"+str);
+        String[] words = str.split(" ");
+        String str2= "";
+        System.out.println(Arrays.toString(words));
+        for (int i = words.length-1; i>=0; i--){
+             str2 += words[i] + " ";
         }
+        System.out.println(str2);*/
 
         sc.close();
     }
