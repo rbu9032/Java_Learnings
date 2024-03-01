@@ -305,7 +305,7 @@ public class StringAssignments {
         //Assignment-16
         //java program to reverse words in a string
         //Input: how are you    Output: you are how
-        /*System.out.println("Enter the input string:");
+        System.out.println("Enter the input string:");
         String str = sc.nextLine();
         System.out.println("Input String:"+str);
         String[] words = str.split(" ");
@@ -314,7 +314,7 @@ public class StringAssignments {
         for (int i = words.length-1; i>=0; i--){
              str2 += words[i] + " ";
         }
-        System.out.println(str2);*/
+        System.out.println(str2);
 
         sc.close();
     }
