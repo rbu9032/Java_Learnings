@@ -1,6 +1,5 @@
 package com.java.temp;
 
-import com.java.accessmodifiers.Student;
 
 import java.util.Scanner;
 

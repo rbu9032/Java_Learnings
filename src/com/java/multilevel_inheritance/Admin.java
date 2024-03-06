@@ -1,6 +1,5 @@
 package com.java.multilevel_inheritance;
 
-import com.java.accessmodifiers.Student;
 
 public class Admin extends Developer{
 
