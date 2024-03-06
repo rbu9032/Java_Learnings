@@ -1,5 +1,7 @@
 package com.java.temp;
 
+import com.java.accessmodifiers.Student;
+
 import java.util.Scanner;
 
 public class Test {
@@ -18,5 +20,9 @@ public class Test {
         for( indexPos=0; indexPos<N; indexPos++){
             System.out.println(arr[indexPos]+ " ");
         }
+
+        /*Student st = new Student();
+        System.out.println(st.rollNo);
+        st.printRollNo();*/
     }
 }
