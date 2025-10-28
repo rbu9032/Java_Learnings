@@ -11,7 +11,7 @@ public class PatternProgram {
         }*/
         String company = "Frontlines Media";
         //System.out.println(company.charAt(0));
-        for(int i =0; i<=company.length()-1; i++){
+        for(int i =0; i<company.length(); i++){
           System.out.println(company.charAt(i));
         }
     }
