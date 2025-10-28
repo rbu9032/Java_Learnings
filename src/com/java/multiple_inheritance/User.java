@@ -12,7 +12,7 @@ public class User implements Admin{
     }
 
     @Override
-    public void read() {
+    public void read() {   
         System.out.println("Read Only");
     }
     public static void main(String[] args) {
