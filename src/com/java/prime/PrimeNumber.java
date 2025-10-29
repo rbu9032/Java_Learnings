@@ -2,6 +2,7 @@ package com.java.prime;
 
 import java.util.Scanner;
 
+
 public class PrimeNumber {
 
     void checkinPrime(long num){
@@ -100,3 +101,4 @@ public class PrimeNumber {
 
     }
 }
+
