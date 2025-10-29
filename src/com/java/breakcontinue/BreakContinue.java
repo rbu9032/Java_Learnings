@@ -3,6 +3,17 @@ package com.java.breakcontinue;
 import java.util.Scanner;
 
 public class BreakContinue {
+    public void addition(int a, int b){
+        int c = a + b;
+    }
+    int sumOfTwoNumbers(int a, int b){
+       int sum = a + b;
+       return  sum;
+    }
+    void division(int d){
+        int div = d/2;
+        System.out.println(div);
+    }
     public static void main(String[] args){
         //logic to print 1 to 100 numbers and skip multiples of 8
         /*for(int i=1; i<=100; i++){
@@ -47,14 +58,25 @@ public class BreakContinue {
         }*/
 
         //program to print table 5 x 1 = 5
-        Scanner scanner = new Scanner(System.in);
+        /*Scanner scanner = new Scanner(System.in);
         System.out.println("Enter a number:");
         int num = scanner.nextInt();
         System.out.println("Enter a number upto which you want to print the table for num:");
         int num1 = scanner.nextInt();
         for(int i=1; i<=num1; i++){
             System.out.println(num +" x "+i +" = " +(num * i));
-        }
+        }*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter c:");
+        int c = scanner.nextInt();
+        System.out.println("Enter d:");
+        int d = scanner.nextInt();
+        BreakContinue BC = new BreakContinue();
+        BC.addition(c, d);
+        int result = BC.sumOfTwoNumbers(c,d);
+        System.out.println("Sum = "+ result);
+       // System.out.println(result/2);
+        BC.division(result);
         scanner.close();
     }
 }
