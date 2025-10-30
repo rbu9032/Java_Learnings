@@ -5,8 +5,8 @@ import java.util.Arrays;
 public class Strings {
     public static void main(String[] args) {
         //Different ways to create a string
-       /* String s1  = "hello ";
-        String s2  = new String("Welcome to Java String");
+       /* String s1  = "hello "; //creating string using literals
+        String s2  = new String("Welcome to Java String"); //creating string using objects
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s1+s2);*/
