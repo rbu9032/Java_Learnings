@@ -5,7 +5,7 @@ import com.java.practice.Bank;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class SingleDimensionalArray {
+public class  SingleDimensionalArray {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -179,7 +179,7 @@ public class SingleDimensionalArray {
 
 
         //Assignment-8 Find the second-highest number from an array and print it along with its index
-        System.out.println("Enter the array size:");
+      /*  System.out.println("Enter the array size:");
         int arrSize = sc.nextInt();
         int arr[] = new int[arrSize];
         System.out.println("Enter the array values:");
@@ -204,7 +204,22 @@ public class SingleDimensionalArray {
         System.out.println("Index of largest number: " + largestNumberIndex);
         System.out.println("Second largest number: " + secondLargestNumber);
         System.out.println("Index of second largest number:" + secondLargestNumberIndex);
+*/
+        //Assignment to create a array with dynamic size, dynamic values and print the values
+        System.out.println("Enter size of array: ");
+        int size = sc.nextInt();
+        char[] arr = new char[size];
+        System.out.println("Size of array: " +arr.length);
+        for (int i=0; i<arr.length; i++){
+            System.out.println("Enter value at index: "+ i);
+            arr[i] = sc.next().charAt(0);  // here at charAt(0) why we are giving 0 means, because we are using next() it consider the input as string,
+                                          // and then you call .charAt(i) on that string — that means you are asking: “give me the character at index i of that string”.
+                                         //But when i>0, so charAt(1) or charAt(2) is invalid
 
+        }
+        for (int i=0; i<arr.length; i++) {
+            System.out.println("Value at index: " + arr[i]);
+        }
 
         sc.close();
     }
