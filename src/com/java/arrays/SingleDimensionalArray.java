@@ -206,7 +206,7 @@ public class  SingleDimensionalArray {
         System.out.println("Index of second largest number:" + secondLargestNumberIndex);
 */
         //Assignment to create a array with dynamic size, dynamic values and print the values
-        System.out.println("Enter size of array: ");
+       /* System.out.println("Enter size of array: ");
         int size = sc.nextInt();
         char[] arr = new char[size];
         System.out.println("Size of array: " +arr.length);
@@ -219,8 +219,105 @@ public class  SingleDimensionalArray {
         }
         for (int i=0; i<arr.length; i++) {
             System.out.println("Value at index: " + arr[i]);
-        }
+        }*/
 
+        //Assignment to find largest and smallest number in an array
+        /*System.out.println("Enter size of array: ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+
+        for (int i=0; i<arr.length; i++) {
+            System.out.println("Enter value at index: " + i);
+            arr[i] = sc.nextInt();
+        }
+        int min=arr[0];
+        int max=arr[0];
+        for(int i=1; i< arr.length; i++){
+            if (arr[i]>max){
+                max =arr[i];
+            }  if (arr[i]<min) {
+                min =arr[i];
+            }
+        }
+        System.out.println("Largest Number: " +max);
+        System.out.println("Smallest Number: " +min);*/
+        System.out.println("Enter size of array: ");
+        int size = sc.nextInt();
+        int[] arr = new int[size];
+        SingleDimensionalArray sda = new SingleDimensionalArray();
+        //sda.findSmallesNumber(arr);
+        //sda.reverseArray(arr);
+        sda.reverA(arr);
         sc.close();
+    }
+    //using method to find largest and smallest number in a array
+    void findSmallesNumber(int[] arr){
+        Scanner sc = new Scanner(System.in);
+        for (int i=0; i<arr.length; i++) {
+            System.out.println("Enter value at index: " + i);
+            arr[i] = sc.nextInt();
+        }
+        int min = arr[0];
+        int max = arr[0];
+          for (int i=1; i< arr.length; i++){
+              if(arr[i]<min){
+                  min = arr[i];
+              }
+              if(arr[i]>max){
+                  max = arr[i];
+              }
+          }
+        System.out.println("Largest Number: " +max);
+          System.out.println("Smallest Number: "+min);
+    }
+    //using method to reverse array using for loop
+    void reverseArray(int[] arr){
+        Scanner sc = new Scanner(System.in);
+        int[] revArray = new int[arr.length];
+        int x = 0;
+        for (int i=0; i<arr.length; i++) {
+            System.out.println("Enter value at index: " + i);
+            arr[i] = sc.nextInt();
+        }
+        for (int j = arr.length-1; j>=0; j--){
+            revArray[x] = arr[j];
+            x++;
+        }
+        System.out.println("Array");
+        for(int a: arr){
+            System.out.print(a+" ");
+        }
+        System.out.println();
+        System.out.println("Reverse Array");
+        for(int d: revArray){
+            System.out.print(d+ " ");
+        }
+    }
+    //using method to reverse array using for loop
+    void reverA(int[] arr){
+        Scanner sc = new Scanner(System.in);
+        for (int i=0; i<arr.length; i++) {
+            System.out.println("Enter value at index: " + i);
+            arr[i] = sc.nextInt();
+        }
+        System.out.println("Array");
+        for(int a: arr){
+            System.out.print(a+" ");
+        }
+        int start =0;
+        int end =
+                arr.length-1;
+        while(start<end){
+            int temp=arr[start];
+            arr[start] = arr[end];
+            arr[end] = temp;
+            start++;
+            end--;
+        }
+        System.out.println();
+        System.out.println("Reverse Array");
+        for(int a: arr){
+            System.out.print(a + " ");
+        }
     }
 }
