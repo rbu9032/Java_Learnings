@@ -1,14 +1,16 @@
 package com.java.filehandling;
 
 import java.io.*;
+import java.util.Scanner;
 
 public class ByteStreams {
 
     public static void main(String[] args) throws FileNotFoundException {
 
      ByteStreams bs = new ByteStreams();
-     bs.writeIntoFile();
-     bs.writeIntoJpeg();
+//     bs.writeIntoFile();
+//     bs.writeIntoJpeg();
+     bs.openFile();
 
     }
 
@@ -72,6 +74,27 @@ public class ByteStreams {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+    }
+
+
+    //try with resources code
+    public void openFile() throws FileNotFoundException {
+        File file = new File("E:\\Hi Raghav.txt");
+        try(FileInputStream fis = new FileInputStream(file); Scanner sc = new Scanner(System.in)){
+            try{
+                int temp;
+                while ((temp=fis.read()) != -1){
+                    System.out.print((char) temp);
+                }
+            }catch (FileNotFoundException e){
+                System.out.println(e);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+
     }
 
 }
