@@ -8,8 +8,11 @@ public class Test {
         System.out.println(name);
         MyThread1 myThread1 = new MyThread1();
         MyThread2 myThread2 = new MyThread2();
+        Runnable myThread3 = new MyThread3();
+        Thread thread = new Thread(myThread3);
         myThread1.start();
         myThread2.start();
+        thread.start();
         sayBye();
         //        sayHi();
     }
