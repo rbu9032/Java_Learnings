@@ -24,9 +24,7 @@ public class Problem {
           if (isTrue == arrayList1.contains(temp)) {
               arrayList1.add(temp);
           }
-
       }
-
         System.out.println(arrayList1);
     }
 }
