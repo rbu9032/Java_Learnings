@@ -58,4 +58,21 @@ public class Problem1 {
             System.out.println(c +"="+map.get(c));
         }
     }
+
+/*    public static void countChars(){
+        ArrayList<Character> arrayList = new ArrayList<Character>(Arrays.asList('A','B','A','C'));
+        HashMap<Character,Integer> map = new HashMap<Character, Integer>();
+        for(char c: arrayList){
+            if (!map.containsKey(c)){
+                map.put(c,1);
+            }else{
+                int count = map.get(c);
+                map.put(c, count+1);
+            }
+        }
+        System.out.println(map);
+        for(Character c:map.keySet()){
+            System.out.println(c +"="+map.get(c));
+        }
+    }*/
 }
