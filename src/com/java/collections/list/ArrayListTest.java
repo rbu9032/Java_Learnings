@@ -54,6 +54,7 @@ public class ArrayListTest {
         Collections.sort(arrayList);
         System.out.println(arrayList);
         Collections.sort(arrayList, Collections.reverseOrder());
+        arrayList.sort(Collections.reverseOrder());
         System.out.println(arrayList); //reverse order
         Collections.swap(arrayList, 0,1);
         System.out.println(arrayList); // swap the given indexes in the lis
