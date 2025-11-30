@@ -2,8 +2,8 @@ package org.util;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.model.Employee;
-import org.model.Student;
+import org.model.*;
+import org.namedqueries.model.Student;
 
 public class HibernateUtil {
 
@@ -13,7 +13,15 @@ public class HibernateUtil {
             Configuration configuration = new Configuration();
             configuration.configure("hibernate.cfg.xml");
             //configuration.addAnnotatedClass(Employee.class);
-            configuration.addAnnotatedClass(Student.class);
+            //configuration.addAnnotatedClass(Student.class);
+            //configuration.addAnnotatedClass(Student.class);
+            //configuration.addAnnotatedClass(Car.class);
+//            configuration.addAnnotatedClass(User.class);
+//            configuration.addAnnotatedClass(Passport.class);
+//            configuration.addAnnotatedClass(Person.class);
+//            configuration.addAnnotatedClass(Orders.class);
+            configuration.addAnnotatedClass(Trainee.class);
+            configuration.addAnnotatedClass(Course.class);
              sessionFactory = configuration.buildSessionFactory();
            return sessionFactory;
         }

@@ -1,8 +1,10 @@
-package org.model;
+package org.namedqueries.model;
 
 import jakarta.persistence.*;
 
 @Entity
+@NamedQueries({@NamedQuery(name="allStudents", query = "from Student"),
+              @NamedQuery(name="updateStudent",query="update Student set marks=?1 where studentId=?2")})
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -58,3 +60,4 @@ public class Student {
                 '}';
     }
 }
+
