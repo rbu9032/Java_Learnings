@@ -8,7 +8,9 @@ public class Test {
 
     public static void main(String[] args) {
         ApplicationContext container = new AnnotationConfigApplicationContext(Config.class);
-        Student st = container.getBean("student", Student.class);
-        System.out.println(st);
+//        Student st = container.getBean("student", Student.class);
+//        System.out.println(st);
+        SimTest simTest = container.getBean("simTest", SimTest.class);
+        simTest.callSim();
     }
 }

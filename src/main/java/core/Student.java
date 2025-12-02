@@ -1,5 +1,7 @@
 package core;
 
+import jakarta.annotation.PostConstruct;
+import jakarta.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -24,6 +26,10 @@ public class Student {
         this.address = address;
     }
 
+    @PostConstruct
+    public void init(){
+        System.out.println("Post Constructor Called");
+    }
     public int getStudentId() {
         return studentId;
     }
@@ -57,4 +63,5 @@ public class Student {
                 ", address=" + address +
                 '}';
     }
+
 }
