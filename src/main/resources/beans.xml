@@ -7,10 +7,40 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-3.0.xsd"> <!-- bean definitions here -->
 
-    <bean id="st" class="io.Student">
+    <bean id="st" class="io.Student" autowire="constructor">
 <!--        <property name="studentId" value="1"/>-->
-        <constructor-arg name="studentId" value="2"/>
+        <constructor-arg name="studentId" value="1"/>
         <constructor-arg name="name" value="Ram"/>
+<!--        <property name="address" ref="address1"/>-->
+    </bean>
+    <bean id="addr" class="io.Address">
+        <property name="addId" value="516"/>
+        <property name="street" value="Hanuman Nagar"/>
+    </bean>
+    <bean id="emp" class="io.Employee">
+        <property name="skills">
+<!--            <list>-->
+<!--                <value>Java</value>-->
+<!--                <value>SQL</value>-->
+<!--                <value>JDBC</value>-->
+<!--                <value>Hibernate</value>-->
+<!--            </list>-->
+            <set>
+                <value>Java</value>
+                <value>SQL</value>
+                <value>JDBC</value>
+                <value>Hibernate</value>
+                <value>Hibernate</value>
+            </set>
+        </property>
+        <property name="hobbies">
+            <map>
+                <entry key="1" value="Cricket"/>
+                <entry key="2" value="Badminton"/>
+                <entry key="3" value="Shuttle"/>
+                <entry key="3" value="Chess"/>
+            </map>
+        </property>
     </bean>
 
 </beans>
