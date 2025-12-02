@@ -18,5 +18,10 @@ public class Test {
 
 //        Employee emp = container.getBean("emp", Employee.class);
 //        System.out.println(emp);
+        User user1 = container.getBean("user", User.class);
+        User user2 = container.getBean("user", User.class);
+        System.out.println(user1);
+        System.out.println(user2);
+        System.out.println(user1==user2);
     }
 }
