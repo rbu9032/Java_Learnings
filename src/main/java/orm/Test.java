@@ -18,6 +18,7 @@ public class Test {
 //        employee.saveEmp(new Employee("Tom","tom@gmail.com"));
         Employee employee2 = employee.getEmployee(4);
         employee2.setName("Taylor");
+        employee2.setEmail("taylor@gmail.com");
         employee.updateEmp(employee2);
 
     }
