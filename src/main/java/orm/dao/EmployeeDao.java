@@ -29,6 +29,11 @@ public class EmployeeDao {
 //        session.persist(new Employee("Sam","sam@gmail.com"));
     }
 
+    public void updateEmp(Employee emp){
+        Session session = getSession();
+        session.merge(emp);
+    }
+
     public Session getSession(){
         return sessionFactory.getCurrentSession();
     }

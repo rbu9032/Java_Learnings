@@ -15,7 +15,10 @@ public class Test {
         EmployeeDao employee = container.getBean("employeeDao", EmployeeDao.class);
         Employee employee1 = employee.getEmployee(1);
         System.out.println(employee1);
-        employee.saveEmp(new Employee("Tom","tom@gmail.com"));
+//        employee.saveEmp(new Employee("Tom","tom@gmail.com"));
+        Employee employee2 = employee.getEmployee(4);
+        employee2.setName("Taylor");
+        employee.updateEmp(employee2);
 
     }
 }
