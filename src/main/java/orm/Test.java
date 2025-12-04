@@ -8,6 +8,8 @@ import orm.config.Config;
 import orm.dao.EmployeeDao;
 import orm.model.Employee;
 
+import java.util.List;
+
 public class Test {
 
     public static void main(String[] args) {
@@ -17,9 +19,9 @@ public class Test {
         System.out.println(employee1);
 //        employee.saveEmp(new Employee("Tom","tom@gmail.com"));
         Employee employee2 = employee.getEmployee(4);
-        employee2.setName("Taylor");
-        employee2.setEmail("taylor@gmail.com");
-        employee.updateEmp(employee2);
-
+//        employee2.setName("Taylor");
+//        employee2.setEmail("taylor@gmail.com");
+//        employee.updateEmp(employee2);
+        employee.deleteEmp(employee2);
     }
 }

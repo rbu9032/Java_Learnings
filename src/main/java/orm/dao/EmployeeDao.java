@@ -8,6 +8,10 @@ import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 import orm.model.Employee;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
 @Component
 @Transactional
 public class EmployeeDao {
@@ -32,6 +36,11 @@ public class EmployeeDao {
     public void updateEmp(Employee emp){
         Session session = getSession();
         session.merge(emp);
+    }
+
+    public void deleteEmp(Employee emp){
+        Session session = getSession();
+        session.remove(emp);
     }
 
     public Session getSession(){
