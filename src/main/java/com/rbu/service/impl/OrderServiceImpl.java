@@ -3,9 +3,10 @@ package com.rbu.service.impl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
@@ -35,21 +36,33 @@ public class OrderServiceImpl implements OrderService{
 	@Autowired
 	OrderItemRepository orderItemRepository;
 	
+	private static final Logger LOGGER = LoggerFactory.getLogger(OrderServiceImpl.class);
+	
 	@Override
 	public OrderResponseDTO placeOrder(List<OrderRequestDTO> orderRequestDTOs) {
+		LOGGER.trace("OrderRequestDto Information: {}",orderRequestDTOs);
+		LOGGER.debug("Entered placeOrder method");
 		Order order = new Order();
 		List<OrderItem> orderItemList = new ArrayList<>();
 		order.setStatus("Ordered");
 		
 		for(OrderRequestDTO orderRequestDTO: orderRequestDTOs) {
+			LOGGER.debug("Processing Order Request DTO's to Order Items");
 			OrderItem orderItem = new OrderItem();
-			Product product = productRepository.findById(orderRequestDTO.getProductId()).get();
+			//Product product = productRepository.findById(orderRequestDTO.getProductId()).get();
+			Product product = productRepository.findById(orderRequestDTO.getProductId())
+					             .orElseThrow(()-> {
+					            	 LOGGER.error("Cannot find any product with the given Id: {}", orderRequestDTO.getProductId());
+					            	 return new RuntimeException("Id not found"); 
+					             });
 			if(product.getStock()>=orderRequestDTO.getQuantity()) {
 				orderItem.setQuantity(orderRequestDTO.getQuantity());
 				orderItem.setProduct(product);
 				orderItem.setOrder(order);
 				orderItemList.add(orderItem);
 				productRepository.updateStock(product.getProductId(), product.getStock()-orderRequestDTO.getQuantity());
+			}else {
+				LOGGER.warn("Insufficeint quantity only {} available",product.getStock());
 			}
 		}
 		order.setOrderItem(orderItemList);
@@ -81,6 +94,7 @@ public class OrderServiceImpl implements OrderService{
 	}
 	
 	private OrderResponseDTO buildOrderResponseDtoFromOrder(Order savedOrder) {
+		LOGGER.debug("Entered buildOrderResponseDtoFromOrder method");
 		OrderResponseDTO orderResponseDTO = new OrderResponseDTO();
 		orderResponseDTO.setOrderId(savedOrder.getOrderId());
 		orderResponseDTO.setStatus(savedOrder.getStatus());
@@ -101,7 +115,8 @@ public class OrderServiceImpl implements OrderService{
 			orderItemResponseDTOList.add(orderItemResponseDTO);
 		}
 		orderResponseDTO.setTotalAmount(totalOrderAmount);
-		orderResponseDTO.setOrderItemResponseDTO(orderItemResponseDTOList);
+		orderResponseDTO.setOrderItem(orderItemResponseDTOList);
+		LOGGER.debug("Returning {} from buildOrderResponseDtoFromOrder",orderResponseDTO);
 		return orderResponseDTO;
 	}
 

@@ -1,0 +1,653 @@
+2025-12-11T19:19:04.251+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 26608 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:19:04.256+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:19:04.348+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-11T19:19:04.352+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-11T19:19:05.750+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:19:05.902+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 129 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:19:06.942+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:19:06.976+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:19:06.977+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:19:07.098+05:30  INFO 26608 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2743 ms
+2025-12-11T19:19:07.466+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:19:07.617+05:30  INFO 26608 --- [OrderManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T19:19:08.941+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:19:09.031+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T19:19:09.826+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3da48154
+2025-12-11T19:19:09.829+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T19:19:10.076+05:30  INFO 26608 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:19:12.212+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:19:12.460+05:30  INFO 26608 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:19:12.669+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-11T19:19:14.234+05:30  WARN 26608 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:19:15.312+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:19:15.328+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 11.927 seconds (process running for 13.29)
+2025-12-11T19:20:03.085+05:30  INFO 26608 --- [OrderManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T19:20:03.085+05:30  INFO 26608 --- [OrderManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T19:20:03.088+05:30  INFO 26608 --- [OrderManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-11T19:20:03.564+05:30 TRACE 26608 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=8, quantity=1, price=19950.0)]
+2025-12-11T19:20:03.567+05:30 DEBUG 26608 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:20:03.568+05:30 DEBUG 26608 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:20:04.024+05:30 DEBUG 26608 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:20:04.027+05:30 DEBUG 26608 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=12, status=Ordered, totalAmount=19000.0, OrderItemResponseDTO=[OrderItemResponseDTO(productId=8, orderItemId=13, productName=Redmi Note 9 Pro Max Mobile, quantity=1, eachProductPrice=19000.0, totalProductPrice=19000.0)]) from buildOrderResponseDtoFromOrder
+2025-12-11T19:25:44.066+05:30  INFO 26608 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2025-12-11T19:25:44.130+05:30  INFO 26608 --- [OrderManagement] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:25:44.222+05:30  INFO 26608 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:25:44.247+05:30  INFO 26608 --- [OrderManagement] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:25:44.282+05:30  INFO 26608 --- [OrderManagement] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-11T19:25:44.324+05:30  INFO 26608 --- [OrderManagement] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-11T19:25:44.671+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 26608 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:25:44.672+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:25:45.099+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:25:45.126+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:25:45.275+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:25:45.276+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:25:45.277+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:25:45.311+05:30  INFO 26608 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 634 ms
+2025-12-11T19:25:45.378+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:25:45.439+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:25:45.441+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-12-11T19:25:45.525+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e7ca2d5
+2025-12-11T19:25:45.526+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-12-11T19:25:45.530+05:30  INFO 26608 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:25:45.629+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:25:45.776+05:30  INFO 26608 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:25:45.968+05:30  WARN 26608 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:25:46.226+05:30  INFO 26608 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:25:46.235+05:30  INFO 26608 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 1.633 seconds (process running for 404.196)
+2025-12-11T19:25:46.238+05:30  INFO 26608 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:29:33.395+05:30  INFO 26608 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2025-12-11T19:29:33.401+05:30  INFO 26608 --- [OrderManagement] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:29:33.481+05:30  INFO 26608 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:29:33.486+05:30  INFO 26608 --- [OrderManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:29:33.488+05:30  INFO 26608 --- [OrderManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-12-11T19:29:33.504+05:30  INFO 26608 --- [OrderManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.2 with PID 26608 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+%PARSER_ERROR[d] INFO  {restartedMain} o.a.c.c.StandardService - Starting service [Tomcat]
+%PARSER_ERROR[d] INFO  {restartedMain} o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 662 ms
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-3 - Starting...
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.p.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4a1614fc
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-3 - Start completed.
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+%PARSER_ERROR[d] WARN  {restartedMain} o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - Started OrderManagementApplication in 1.761 seconds (process running for 661.728)
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.2 with PID 4168 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 121 ms. Found 3 JPA repository interfaces.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+%PARSER_ERROR[d] INFO  {restartedMain} o.a.c.c.StandardService - Starting service [Tomcat]
+%PARSER_ERROR[d] INFO  {restartedMain} o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2859 ms
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+%PARSER_ERROR[d] INFO  {restartedMain} o.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.8.Final
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-1 - Starting...
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7bb523cf
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+%PARSER_ERROR[d] WARN  {restartedMain} o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+%PARSER_ERROR[d] WARN  {restartedMain} o.s.b.w.s.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+%PARSER_ERROR[d] ERROR {restartedMain} o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(16)-127.0.0.1} o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(16)-127.0.0.1} o.s.b.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+%PARSER_ERROR[d] INFO  {tomcat-shutdown} o.s.b.t.GracefulShutdown - Graceful shutdown complete
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(16)-127.0.0.1} o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(16)-127.0.0.1} c.z.h.HikariDataSource - HikariPool-3 - Shutdown initiated...
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(16)-127.0.0.1} c.z.h.HikariDataSource - HikariPool-3 - Shutdown completed.
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - Starting OrderManagementApplication using Java 17.0.2 with PID 24136 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - No active profile set, falling back to 1 default profile: "default"
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 105 ms. Found 3 JPA repository interfaces.
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.t.TomcatWebServer - Tomcat initialized with port 8080 (http)
+%PARSER_ERROR[d] INFO  {restartedMain} o.a.c.c.StandardService - Starting service [Tomcat]
+%PARSER_ERROR[d] INFO  {restartedMain} o.a.c.c.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.14]
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 2301 ms
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.j.i.u.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+%PARSER_ERROR[d] INFO  {restartedMain} o.hibernate.Version - HHH000412: Hibernate ORM core version 7.1.8.Final
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-1 - Starting...
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.p.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ca12f25
+%PARSER_ERROR[d] INFO  {restartedMain} c.z.h.HikariDataSource - HikariPool-1 - Start completed.
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.o.c.pooling - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+%PARSER_ERROR[d] INFO  {restartedMain} o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.d.j.r.q.QueryEnhancerFactories - Hibernate is in classpath; If applicable, HQL parser will be used.
+%PARSER_ERROR[d] WARN  {restartedMain} o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+%PARSER_ERROR[d] INFO  {restartedMain} o.s.b.t.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+%PARSER_ERROR[d] INFO  {restartedMain} c.r.OrderManagementApplication - Started OrderManagementApplication in 9.762 seconds (process running for 11.055)
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(4)-127.0.0.1} o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(4)-127.0.0.1} o.s.b.t.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+%PARSER_ERROR[d] INFO  {tomcat-shutdown} o.s.b.t.GracefulShutdown - Graceful shutdown complete
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(4)-127.0.0.1} o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(4)-127.0.0.1} c.z.h.HikariDataSource - HikariPool-1 - Shutdown initiated...
+%PARSER_ERROR[d] INFO  {RMI TCP Connection(4)-127.0.0.1} c.z.h.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-11T19:33:05.640+05:30  INFO 28480 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 28480 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:33:05.650+05:30  INFO 28480 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:33:05.763+05:30  INFO 28480 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-11T19:33:05.764+05:30  INFO 28480 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-11T19:33:07.192+05:30  INFO 28480 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:33:07.331+05:30  INFO 28480 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 117 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:33:08.272+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:33:08.298+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:33:08.299+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:33:08.399+05:30  INFO 28480 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2634 ms
+2025-12-11T19:33:08.730+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:33:08.887+05:30  INFO 28480 --- [OrderManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T19:33:10.011+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:33:10.099+05:30  INFO 28480 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T19:33:10.768+05:30  INFO 28480 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@729e67e2
+2025-12-11T19:33:10.773+05:30  INFO 28480 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T19:33:10.979+05:30  INFO 28480 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:33:13.281+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:33:13.489+05:30  INFO 28480 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:33:13.695+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-11T19:33:15.058+05:30  WARN 28480 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:33:15.895+05:30  INFO 28480 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:33:15.905+05:30  INFO 28480 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 11.162 seconds (process running for 13.022)
+2025-12-11T19:33:21.999+05:30  INFO 28480 --- [OrderManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T19:33:22.000+05:30  INFO 28480 --- [OrderManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T19:33:22.004+05:30  INFO 28480 --- [OrderManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2025-12-11T19:33:22.425+05:30 TRACE 28480 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=8, quantity=1, price=19950.0)]
+2025-12-11T19:33:22.426+05:30 DEBUG 28480 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:33:22.427+05:30 DEBUG 28480 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:33:22.913+05:30 DEBUG 28480 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:33:22.916+05:30 DEBUG 28480 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=13, status=Ordered, totalAmount=19000.0, OrderItemResponseDTO=[OrderItemResponseDTO(productId=8, orderItemId=14, productName=Redmi Note 9 Pro Max Mobile, quantity=1, eachProductPrice=19000.0, totalProductPrice=19000.0)]) from buildOrderResponseDtoFromOrder
+2025-12-11T19:33:28.113+05:30  INFO 28480 --- [OrderManagement] [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-12-11T19:33:28.121+05:30  INFO 28480 --- [OrderManagement] [RMI TCP Connection(2)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:33:28.198+05:30  INFO 28480 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:33:28.205+05:30  INFO 28480 --- [OrderManagement] [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:33:28.210+05:30  INFO 28480 --- [OrderManagement] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-11T19:33:28.226+05:30  INFO 28480 --- [OrderManagement] [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-11T19:35:39.661+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:35:39.670+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:35:39.773+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-11T19:35:39.774+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-11T19:35:42.109+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:35:42.216+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 83 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:35:42.995+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:35:43.015+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:35:43.016+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:35:43.095+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3320 ms
+2025-12-11T19:35:43.389+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:35:43.527+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T19:35:44.598+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:35:44.675+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T19:35:45.312+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2c6da839
+2025-12-11T19:35:45.315+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T19:35:45.505+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:35:47.447+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:35:47.635+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:35:47.793+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-11T19:35:49.035+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:35:49.698+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:35:49.708+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 10.989 seconds (process running for 12.521)
+2025-12-11T19:35:54.207+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T19:35:54.209+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T19:35:54.212+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-12-11T19:35:54.516+05:30 TRACE 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=8, quantity=1, price=19950.0)]
+2025-12-11T19:35:54.517+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:35:54.519+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:35:54.892+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:35:54.893+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=14, status=Ordered, totalAmount=19000.0, OrderItemResponseDTO=[OrderItem [productId=8, orderItemId=15, productName=Redmi Note 9 Pro Max Mobile, quantity=1, eachProductPrice=19000.0, totalProductPrice=19000.0]]) from buildOrderResponseDtoFromOrder
+2025-12-11T19:36:27.981+05:30  INFO 11116 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 2 deletions, 25 modifications)
+2025-12-11T19:36:27.989+05:30  INFO 11116 --- [OrderManagement] [Thread-1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:36:28.058+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:36:28.062+05:30  INFO 11116 --- [OrderManagement] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:36:28.069+05:30  INFO 11116 --- [OrderManagement] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-11T19:36:28.462+05:30  INFO 11116 --- [OrderManagement] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-11T19:36:28.610+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:36:28.610+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:36:28.865+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:36:28.899+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:36:29.316+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:36:29.318+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:36:29.319+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:36:29.844+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1228 ms
+2025-12-11T19:36:29.904+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:36:29.962+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:36:29.965+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-12-11T19:36:30.057+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fcae9cb
+2025-12-11T19:36:30.057+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-12-11T19:36:30.060+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:36:30.221+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:36:30.299+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:36:30.476+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:36:30.714+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:36:30.721+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 2.196 seconds (process running for 53.534)
+2025-12-11T19:36:30.725+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:38:46.289+05:30  INFO 11116 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2025-12-11T19:38:46.303+05:30  INFO 11116 --- [OrderManagement] [Thread-5] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:38:46.373+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:38:46.380+05:30  INFO 11116 --- [OrderManagement] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:38:46.389+05:30  INFO 11116 --- [OrderManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-12-11T19:38:46.404+05:30  INFO 11116 --- [OrderManagement] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-12-11T19:38:46.649+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:38:46.650+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:38:46.925+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:38:46.958+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:38:47.113+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:38:47.114+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:38:47.114+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:38:47.148+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 494 ms
+2025-12-11T19:38:47.210+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:38:47.270+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:38:47.273+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-12-11T19:38:47.307+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7dde0541
+2025-12-11T19:38:47.307+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-12-11T19:38:47.311+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:38:47.426+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:38:47.504+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:38:47.676+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:38:47.865+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:38:47.870+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 1.276 seconds (process running for 190.683)
+2025-12-11T19:38:47.872+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:38:55.724+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T19:38:55.724+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T19:38:55.726+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-11T19:38:55.736+05:30 TRACE 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=8, quantity=1, price=19950.0)]
+2025-12-11T19:38:55.736+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:38:55.737+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:38:55.775+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:38:55.778+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=15, status=Ordered, totalAmount=19000.0, OrderItemResponseDTO=[OrderItemResponseDTO(productId=8, orderItemId=16, productName=Redmi Note 9 Pro Max Mobile, quantity=1, eachProductPrice=19000.0, totalProductPrice=19000.0)]) from buildOrderResponseDtoFromOrder
+2025-12-11T19:39:05.750+05:30  INFO 11116 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2025-12-11T19:39:05.753+05:30  INFO 11116 --- [OrderManagement] [Thread-9] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:39:05.828+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:39:05.833+05:30  INFO 11116 --- [OrderManagement] [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:39:05.834+05:30  INFO 11116 --- [OrderManagement] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-12-11T19:39:05.842+05:30  INFO 11116 --- [OrderManagement] [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-12-11T19:39:05.934+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:39:05.934+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:39:06.261+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:39:06.289+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:39:06.416+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:39:06.417+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:39:06.417+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:39:06.443+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 504 ms
+2025-12-11T19:39:06.494+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:39:06.532+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:39:06.534+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-12-11T19:39:06.554+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b09eec3
+2025-12-11T19:39:06.554+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-12-11T19:39:06.557+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:39:06.652+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:39:06.711+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:39:06.824+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:39:06.974+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:39:06.978+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 1.085 seconds (process running for 209.791)
+2025-12-11T19:39:06.980+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:39:58.864+05:30  INFO 11116 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2025-12-11T19:39:58.867+05:30  INFO 11116 --- [OrderManagement] [Thread-13] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:39:58.922+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:39:58.925+05:30  INFO 11116 --- [OrderManagement] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:39:58.925+05:30  INFO 11116 --- [OrderManagement] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-12-11T19:39:58.933+05:30  INFO 11116 --- [OrderManagement] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-12-11T19:39:59.030+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:39:59.030+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:39:59.288+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:39:59.309+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:39:59.424+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:39:59.425+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:39:59.426+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:39:59.456+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 423 ms
+2025-12-11T19:39:59.515+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:39:59.566+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:39:59.567+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-12-11T19:39:59.592+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@978b9c7
+2025-12-11T19:39:59.594+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-12-11T19:39:59.596+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:39:59.669+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:39:59.722+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:39:59.809+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:39:59.947+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:39:59.950+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 0.961 seconds (process running for 262.763)
+2025-12-11T19:39:59.952+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:40:07.056+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T19:40:07.057+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T19:40:07.058+05:30  INFO 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-11T19:40:07.066+05:30 TRACE 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=8, quantity=1, price=19950.0)]
+2025-12-11T19:40:07.066+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:40:07.067+05:30 DEBUG 11116 --- [OrderManagement] [http-nio-8080-exec-2] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:40:07.127+05:30 ERROR 11116 --- [OrderManagement] [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Handler dispatch failed: java.lang.Error: Unresolved compilation problem: 
+	The method setOrderItemResponseDTO(List<OrderItemResponseDTO>) is undefined for the type OrderResponseDTO
+] with root cause
+
+java.lang.Error: Unresolved compilation problem: 
+	The method setOrderItemResponseDTO(List<OrderItemResponseDTO>) is undefined for the type OrderResponseDTO
+
+	at com.rbu.service.impl.OrderServiceImpl.buildOrderResponseDtoFromOrder(OrderServiceImpl.java:118) ~[classes/:na]
+	at com.rbu.service.impl.OrderServiceImpl.placeOrder(OrderServiceImpl.java:72) ~[classes/:na]
+	at com.rbu.controller.OrderController.placeOrder(OrderController.java:29) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.1.jar:7.0.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.14.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.1.jar:7.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.14.jar:11.0.14]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2025-12-11T19:40:40.937+05:30  INFO 11116 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2025-12-11T19:40:40.940+05:30  INFO 11116 --- [OrderManagement] [Thread-17] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:40:41.013+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:40:41.016+05:30  INFO 11116 --- [OrderManagement] [Thread-17] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:40:41.017+05:30  INFO 11116 --- [OrderManagement] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-12-11T19:40:41.028+05:30  INFO 11116 --- [OrderManagement] [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-12-11T19:40:41.140+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:40:41.140+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:40:41.446+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:40:41.480+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:40:41.607+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:40:41.608+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:40:41.608+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:40:41.632+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 488 ms
+2025-12-11T19:40:41.668+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:40:41.718+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:40:41.720+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-12-11T19:40:41.746+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7baffa91
+2025-12-11T19:40:41.747+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-12-11T19:40:41.749+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:40:41.841+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:40:41.898+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:40:42.008+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:40:42.154+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:40:42.158+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 1.067 seconds (process running for 304.971)
+2025-12-11T19:40:42.160+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:40:50.791+05:30  INFO 11116 --- [OrderManagement] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2025-12-11T19:40:50.795+05:30  INFO 11116 --- [OrderManagement] [Thread-21] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:40:50.862+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:40:50.865+05:30  INFO 11116 --- [OrderManagement] [Thread-21] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:40:50.866+05:30  INFO 11116 --- [OrderManagement] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2025-12-11T19:40:50.878+05:30  INFO 11116 --- [OrderManagement] [Thread-21] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2025-12-11T19:40:51.000+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 11116 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:40:51.001+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:40:51.298+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:40:51.327+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:40:51.466+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:40:51.467+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:40:51.468+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:40:51.504+05:30  INFO 11116 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 499 ms
+2025-12-11T19:40:51.563+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:40:51.620+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:40:51.623+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2025-12-11T19:40:51.651+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-7 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f72c522
+2025-12-11T19:40:51.652+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2025-12-11T19:40:51.655+05:30  INFO 11116 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:40:51.738+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:40:51.800+05:30  INFO 11116 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:40:51.915+05:30  WARN 11116 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:40:52.096+05:30  INFO 11116 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:40:52.100+05:30  INFO 11116 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 1.16 seconds (process running for 314.912)
+2025-12-11T19:40:52.101+05:30  INFO 11116 --- [OrderManagement] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-12-11T19:40:52.186+05:30  INFO 11116 --- [OrderManagement] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-12-11T19:40:52.188+05:30  INFO 11116 --- [OrderManagement] [RMI TCP Connection(8)-127.0.0.1] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-11T19:40:52.254+05:30  INFO 11116 --- [OrderManagement] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2025-12-11T19:40:52.256+05:30  INFO 11116 --- [OrderManagement] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:40:52.257+05:30  INFO 11116 --- [OrderManagement] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2025-12-11T19:40:52.265+05:30  INFO 11116 --- [OrderManagement] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2025-12-11T19:40:57.804+05:30  INFO 20296 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Starting OrderManagementApplication using Java 17.0.2 with PID 20296 (C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement\target\classes started by susmi in C:\Users\susmi\Desktop\JAVA\SpringBoot\OrderManagement)
+2025-12-11T19:40:57.810+05:30  INFO 20296 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2025-12-11T19:40:57.883+05:30  INFO 20296 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-11T19:40:57.884+05:30  INFO 20296 --- [OrderManagement] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-11T19:40:59.030+05:30  INFO 20296 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-11T19:40:59.203+05:30  INFO 20296 --- [OrderManagement] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 102 ms. Found 3 JPA repository interfaces.
+2025-12-11T19:41:00.293+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2025-12-11T19:41:00.325+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-11T19:41:00.327+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.14]
+2025-12-11T19:41:00.433+05:30  INFO 20296 --- [OrderManagement] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 2548 ms
+2025-12-11T19:41:00.756+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-11T19:41:00.909+05:30  INFO 20296 --- [OrderManagement] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 7.1.8.Final
+2025-12-11T19:41:02.462+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-11T19:41:02.824+05:30  INFO 20296 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-11T19:41:04.067+05:30  INFO 20296 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39c43a3d
+2025-12-11T19:41:04.071+05:30  INFO 20296 --- [OrderManagement] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-11T19:41:04.289+05:30  INFO 20296 --- [OrderManagement] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/raghu]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.44
+	Default catalog/schema: raghu/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DatasourceConnectionProviderImpl
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-11T19:41:08.820+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-11T19:41:09.591+05:30  INFO 20296 --- [OrderManagement] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-11T19:41:10.110+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-11T19:41:12.357+05:30  WARN 20296 --- [OrderManagement] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-11T19:41:13.132+05:30  INFO 20296 --- [OrderManagement] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2025-12-11T19:41:13.142+05:30  INFO 20296 --- [OrderManagement] [restartedMain] com.rbu.OrderManagementApplication       : Started OrderManagementApplication in 15.995 seconds (process running for 17.273)
+2025-12-11T19:41:19.429+05:30  INFO 20296 --- [OrderManagement] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-11T19:41:19.430+05:30  INFO 20296 --- [OrderManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-11T19:41:19.432+05:30  INFO 20296 --- [OrderManagement] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-12-11T19:41:19.728+05:30 TRACE 20296 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=8, quantity=1, price=19950.0)]
+2025-12-11T19:41:19.730+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:41:19.731+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:41:19.891+05:30  WARN 20296 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Insufficeint quantity only 0 available
+2025-12-11T19:41:19.998+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:41:20.000+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-1] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=17, status=Ordered, totalAmount=0.0, OrderItem=[]) from buildOrderResponseDtoFromOrder
+2025-12-11T19:42:22.696+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-4] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:42:22.716+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-4] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=1, status=Ordered, totalAmount=127920.0, OrderItem=[OrderItemResponseDTO(productId=2, orderItemId=1, productName=OnePlus 13T Mobile, quantity=3, eachProductPrice=42640.0, totalProductPrice=127920.0)]) from buildOrderResponseDtoFromOrder
+2025-12-11T19:43:04.919+05:30 TRACE 20296 --- [OrderManagement] [http-nio-8080-exec-5] com.rbu.service.impl.OrderServiceImpl    : OrderRequestDto Information: [OrderRequestDTO(productId=2, quantity=1, price=42640.0)]
+2025-12-11T19:43:04.921+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-5] com.rbu.service.impl.OrderServiceImpl    : Entered placeOrder method
+2025-12-11T19:43:04.921+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-5] com.rbu.service.impl.OrderServiceImpl    : Processing Order Request DTO's to Order Items
+2025-12-11T19:43:05.050+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-5] com.rbu.service.impl.OrderServiceImpl    : Entered buildOrderResponseDtoFromOrder method
+2025-12-11T19:43:05.050+05:30 DEBUG 20296 --- [OrderManagement] [http-nio-8080-exec-5] com.rbu.service.impl.OrderServiceImpl    : Returning OrderResponseDTO(orderId=18, status=Ordered, totalAmount=42640.0, OrderItem=[OrderItemResponseDTO(productId=2, orderItemId=18, productName=OnePlus 13T Mobile, quantity=1, eachProductPrice=42640.0, totalProductPrice=42640.0)]) from buildOrderResponseDtoFromOrder

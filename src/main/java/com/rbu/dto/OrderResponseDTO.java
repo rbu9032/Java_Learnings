@@ -18,6 +18,6 @@ public class OrderResponseDTO {
 	
 	private double totalAmount;
 	
-	List<OrderItemResponseDTO> OrderItemResponseDTO;
+	List<OrderItemResponseDTO> OrderItem;
 
 }

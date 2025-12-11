@@ -21,4 +21,5 @@ public class OrderItemResponseDTO {
 	private double eachProductPrice;
 
 	private double totalProductPrice;
+	
 }
