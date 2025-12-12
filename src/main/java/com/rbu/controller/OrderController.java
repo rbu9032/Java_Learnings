@@ -17,6 +17,9 @@ import com.rbu.dto.OrderRequestDTO;
 import com.rbu.dto.OrderResponseDTO;
 import com.rbu.service.OrderService;
 
+import io.micrometer.core.annotation.Counted;
+import io.micrometer.core.annotation.Timed;
+
 @RestController
 @RequestMapping("/orders")
 public class OrderController {
@@ -25,6 +28,8 @@ public class OrderController {
 	OrderService orderService;
 	
 	@PostMapping("/buy")
+	@Timed(value="orders.placed.time")
+	@Counted(value="orders.placed.count")
 	public OrderResponseDTO placeOrder(@RequestBody List<OrderRequestDTO> orderRequestDTO) {
 		return orderService.placeOrder(orderRequestDTO);
 	}
@@ -34,6 +39,8 @@ public class OrderController {
 		return orderService.cancelItem(orderItemId);
 	}
 	@GetMapping("/{orderId}")
+	@Timed(value="orders.get.time")
+	@Counted(value="orders.get.count")
 	public ResponseEntity<OrderResponseDTO> getOrderInfo(@PathVariable(name="orderId") long orderId) {
 		return orderService.getOrderInfo(orderId);
 	}
