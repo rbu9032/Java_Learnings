@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.CascadeType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.CascadeType"/>
+    <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.model.Restaurant"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.builder.UserBuilder"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.model.User"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.model.Address"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.model.Item"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.builder.RestaurantDtoBuilder"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.model.Order"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.BeanUtils"/>
+    <fullyQualifiedTypeName name="com.rbu.restaurant.dto.OrderResponseDto"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
+</qualifiedTypeNameHistroy>

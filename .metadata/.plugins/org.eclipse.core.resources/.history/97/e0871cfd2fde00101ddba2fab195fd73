@@ -1,0 +1,5 @@
+package com.rbu.restaurant.exception;
+
+public class GlobalExceptionHandler {
+
+}

@@ -1,0 +1,28 @@
+package com.rbu.restaurant.service.imp;
+
+import org.springframework.stereotype.Service;
+
+import com.rbu.restaurant.dao.UserRepository;
+import com.rbu.restaurant.dto.UserRequestDto;
+import com.rbu.restaurant.dto.UserResponseDto;
+import com.rbu.restaurant.service.UserService;
+
+@Service
+public class UserServiceImpl implements UserService{
+
+	UserRepository userRepository;
+	
+	public UserServiceImpl(UserRepository userRepository) {
+		super();
+		this.userRepository = userRepository;
+	}
+
+
+
+	@Override
+	public UserResponseDto addUser(UserRequestDto userRequestDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

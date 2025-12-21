@@ -1,0 +1,37 @@
+package com.rbu.restaurant.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+
+import com.rbu.restaurant.dto.UserAddressRequestDto;
+import com.rbu.restaurant.dto.UserRequestDto;
+import com.rbu.restaurant.model.User;
+import com.rbu.restaurant.model.UserAddress;
+
+public class UserBuilder {
+	
+	public static User buildUserFromUserDto(UserRequestDto userRequestDto) {
+		return User.builder()
+				    .userName(userRequestDto.getUserName())
+				    .phoneNum(userRequestDto.getPhoneNum())
+				    .email(userRequestDto.getEmail())
+				    .password(userRequestDto.getPassword())
+				    .userAddress(buildUserAddressFromUserAddressRequestDto(userRequestDto.getUserAddressRequestDto()))
+				    .build();
+	}
+	
+	private static List<UserAddress> buildUserAddressFromUserAddressRequestDto(List<UserAddressRequestDto> userAddressRequestDto) {
+		List<UserAddress> userAddress = new ArrayList<>();
+		
+		for(UserAddressRequestDto userAddressRequestDtos: userAddressRequestDto) {
+			UserAddress address = new UserAddress();
+			BeanUtils.copyProperties(userAddressRequestDtos, address);
+			userAddress.add(address);
+		}
+		return userAddress;
+		
+	}
+
+}

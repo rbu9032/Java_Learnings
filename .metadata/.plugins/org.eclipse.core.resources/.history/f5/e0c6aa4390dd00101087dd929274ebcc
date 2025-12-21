@@ -1,0 +1,27 @@
+package com.rbu.restaurant.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.rbu.restaurant.dto.RestaurantResponseDto;
+import com.rbu.restaurant.service.RestaurantService;
+
+@RestController
+@RequestMapping("/restaurants")
+public class RestaurantController {
+	
+	private final RestaurantService restaurantService;
+	 
+	public RestaurantController(RestaurantService restaurantService) {
+		this.restaurantService = restaurantService;
+	}
+	
+	@GetMapping("/add")
+	public RestaurantResponseDto addRestaurant(@RequestBody RestaurantResponseDto restaurantResponseDto) {
+		
+	}
+
+}

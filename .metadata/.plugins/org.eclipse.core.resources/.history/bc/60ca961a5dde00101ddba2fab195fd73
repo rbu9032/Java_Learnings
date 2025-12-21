@@ -1,0 +1,57 @@
+package com.rbu.restaurant.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+import org.springframework.web.client.RestTemplate;
+
+import com.rbu.restaurant.dto.OrderItemResponseDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.model.Order;
+import com.rbu.restaurant.model.OrderItem;
+
+
+
+public class OrderDtoBuilder {
+	
+	private final RestTemplate restTemplate;
+	
+	public OrderDtoBuilder(RestTemplate restTemplate) {
+		super();
+		this.restTemplate = restTemplate;
+	}
+	
+	public OrderDtoBuilder() {
+		this.restTemplate = new RestTemplate();
+		
+	}
+	
+	public static OrderResponseDto buildOrderResponseDtoFromOrder(Order order) {
+		
+	OrderDtoBuilder orderDtoBuilder	= new OrderDtoBuilder();
+		
+	return	OrderResponseDto.builder()
+		           .orderId(order.getOrderId())
+		           .status(order.getStatus())
+		           .orderPrice(order.getOrderPrice())
+		           .orderItems(buildOrderItemResponseDto(order.getOrderItems()))
+		           .restaurantName(orderDtoBuilder.fetchRestaurantNameFromId(order.getRestaurantId()))
+		           .build();
+	}
+	
+	private static List<OrderItemResponseDto> buildOrderItemResponseDto(List<OrderItem> orderItems){
+		
+		List<OrderItemResponseDto> orderItemResponseDtoList = new ArrayList<>();
+		for(OrderItem orderItem: orderItems) {
+			OrderItemResponseDto orderItemResponseDto = new OrderItemResponseDto();
+			BeanUtils.copyProperties(orderItem, orderItemResponseDto);
+			orderItemResponseDtoList.add(orderItemResponseDto);
+		}
+		return orderItemResponseDtoList;
+	}
+	private String fetchRestaurantNameFromId(long restaurantId) {
+		return restTemplate.getForObject("http://localhost:8002/restaurants/name/"+restaurantId, String.class);
+	}
+
+}

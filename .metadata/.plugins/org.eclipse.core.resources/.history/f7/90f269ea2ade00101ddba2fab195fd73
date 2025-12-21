@@ -1,0 +1,29 @@
+package com.rbu.restaurant.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.rbu.restaurant.builder.RestaurnatBuilder;
+import com.rbu.restaurant.dao.RestaurantRepository;
+import com.rbu.restaurant.dto.RestaurantCreationResponse;
+import com.rbu.restaurant.dto.RestaurantRequestDto;
+import com.rbu.restaurant.model.Restaurant;
+import com.rbu.restaurant.service.RestaurantService;
+
+@Service
+public class RestaurantServiceImpl implements RestaurantService {
+
+	private final RestaurantRepository restaurantRepository;
+
+	public RestaurantServiceImpl(RestaurantRepository restaurantRepository) {
+		super();
+		this.restaurantRepository = restaurantRepository;
+	}
+
+	@Override
+	public RestaurantCreationResponse addRestaurant(RestaurantRequestDto restaurantRequestDto) {
+		Restaurant restaurant = RestaurnatBuilder.buildRestaurantFromRestaurantDto(restaurantRequestDto);
+		Restaurant savedRestaurant = restaurantRepository.save(restaurant);
+		return new RestaurantCreationResponse(savedRestaurant.getRestaurantId(), savedRestaurant.getRestaurantName());
+	}
+
+}

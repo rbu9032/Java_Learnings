@@ -1,0 +1,12 @@
+package com.rbu.restaurant.service;
+
+import com.rbu.restaurant.dto.DeliveryPartnerRequestDto;
+import com.rbu.restaurant.dto.DeliveryPartnerResponseDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+
+public interface DeliveryPartnerService {
+	
+	DeliveryPartnerResponseDto registerDeliveryPartner(DeliveryPartnerRequestDto deliveryRequestDto);
+
+	OrderResponseDto updateOrderStatus(long orderId, String status);
+}

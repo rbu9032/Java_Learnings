@@ -1,0 +1,10 @@
+package com.rbu.restaurant.service.imp;
+
+import org.springframework.stereotype.Service;
+
+import com.rbu.restaurant.service.UserService;
+
+@Service
+public class UserServiceImpl implements UserService{
+
+}

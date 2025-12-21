@@ -1,0 +1,10 @@
+package com.rbu.restaurant.service;
+
+import com.rbu.restaurant.dto.RestaurantCreationResponse;
+import com.rbu.restaurant.dto.RestaurantRequestDto;
+
+public interface RestaurantService {
+
+	RestaurantCreationResponse addRestaurant(RestaurantRequestDto restaurantRequestDto);
+	
+}

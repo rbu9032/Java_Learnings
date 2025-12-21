@@ -1,0 +1,5 @@
+package com.rbu.restaurant.dto;
+
+public class ItemResponseDto {
+
+}

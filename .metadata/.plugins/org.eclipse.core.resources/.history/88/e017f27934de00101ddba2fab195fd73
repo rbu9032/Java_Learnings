@@ -1,0 +1,18 @@
+package com.rbu.restaurant.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.rbu.restaurant.dto.OrderRequestDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.service.OrderService;
+
+@Service
+public class OrderServiceImpl implements OrderService{
+
+	@Override
+	public OrderResponseDto placeOrder(OrderRequestDto orderRequestDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

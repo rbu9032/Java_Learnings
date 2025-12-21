@@ -1,0 +1,43 @@
+package com.rbu.restaurant.builder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.BeanUtils;
+
+import com.rbu.restaurant.dto.AddressResponseDto;
+import com.rbu.restaurant.dto.ItemResponseDto;
+import com.rbu.restaurant.dto.RestaurantResponseDto;
+import com.rbu.restaurant.model.Address;
+import com.rbu.restaurant.model.Item;
+import com.rbu.restaurant.model.Restaurant;
+
+public class RestaurantDtoBuilder {
+	
+	public static RestaurantResponseDto buildRestaurantResponseDTOFromRestaurant(Restaurant restaurant) {
+		return RestaurantResponseDto.builder()
+		                     .restaurantId(restaurant.getRestaurantId())
+		                     .restaurantName(restaurant.getRestaurantName())
+		                     .rating(restaurant.getRating())
+		                     .phoneNo(restaurant.getPhoneNo())
+		                     .addressResponseDto(buildAddressResponseDto(restaurant.getAddress()))
+		                     .itemResponseDto(buildItemResponseDtoList(restaurant.getItems()))
+		                     .build();
+	}
+
+	public static AddressResponseDto buildAddressResponseDto(Address address) {
+		AddressResponseDto addressResponseDto = new AddressResponseDto();
+		BeanUtils.copyProperties(address, addressResponseDto);
+		return addressResponseDto;
+	}
+	
+	public static List<ItemResponseDto> buildItemResponseDtoList(List<Item> items){
+		List<ItemResponseDto> itemResponseDtoList = new ArrayList<>();
+		for(Item item: items) {
+			ItemResponseDto itemResponseDto = new ItemResponseDto();
+			BeanUtils.copyProperties(item, itemResponseDto);
+			itemResponseDtoList.add(itemResponseDto);
+		}
+		return itemResponseDtoList;
+	}
+}

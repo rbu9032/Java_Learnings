@@ -1,0 +1,7 @@
+package com.rbu.restaurant.service.imp;
+
+import com.rbu.restaurant.service.UserService;
+
+public class UserServiceImpl implements UserService{
+
+}

@@ -1,0 +1,5 @@
+package com.rbu.restaurant.dao;
+
+public interface OrderRepository {
+
+}

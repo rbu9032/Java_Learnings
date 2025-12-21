@@ -1,0 +1,15 @@
+package com.rbu.restaurant.dto;
+
+import java.util.List;
+
+public class RestaurantRequestDto {
+	
+	private String restaurantName;
+	
+	private String phoneNo;
+	
+	private AddressRequestDto addressRequestDto;
+	
+	private List<ItemRequestDto> itemRequestDto;
+
+}

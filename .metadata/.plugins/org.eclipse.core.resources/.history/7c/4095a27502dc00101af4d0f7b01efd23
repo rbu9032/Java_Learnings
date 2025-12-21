@@ -1,0 +1,5 @@
+package com.rbu.restaurant.model;
+
+public class Item {
+
+}

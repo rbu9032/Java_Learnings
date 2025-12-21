@@ -1,0 +1,42 @@
+package com.rbu.restaurant.service.impl;
+
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.rbu.restaurant.builder.OrderBuilder;
+import com.rbu.restaurant.builder.OrderDtoBuilder;
+import com.rbu.restaurant.dao.OrderRepository;
+import com.rbu.restaurant.dto.OrderRequestDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.model.Order;
+import com.rbu.restaurant.service.OrderService;
+
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	private final OrderRepository orderRepository;
+	
+	private final RestTemplate restTemplate;
+
+	public OrderServiceImpl(OrderRepository orderRepository, RestTemplate restTemplate) {
+		super();
+		this.orderRepository = orderRepository;
+		this.restTemplate =  restTemplate;
+	}
+
+	@Override
+	public OrderResponseDto placeOrder(OrderRequestDto orderRequestDto) {
+		Order order = OrderBuilder.buildOrderFromOrderDto(orderRequestDto);
+		Order savedOrder = orderRepository.save(order);
+		OrderResponseDto orderResponseDto =  OrderDtoBuilder.buildOrderResponseDtoFromOrder(savedOrder);
+		String restaurantName = restTemplate.getForObject("http://localhost:8002/restaurants/name/"+order.getRestaurantId(), String.class);
+		orderResponseDto.setRestaurantName(restaurantName);
+		return orderResponseDto;
+	}
+
+	@Override
+	public OrderResponseDto updateOrderStatus(long orderId, String status) {
+		orderRepository.findById(orderId).orElseThrow()
+		return null;
+	}
+}

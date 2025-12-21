@@ -1,0 +1,10 @@
+package com.rbu.restaurant.service;
+
+import com.rbu.restaurant.dto.DeliveryPartnerRequestDto;
+import com.rbu.restaurant.dto.DeliveryPartnerResponseDto;
+
+public interface DeliveryPartnerService {
+	
+	DeliveryPartnerResponseDto registerDeliveryPartner(DeliveryPartnerRequestDto deliveryRequestDto);
+
+}

@@ -1,0 +1,5 @@
+package com.rbu.restaurant.service.imp;
+
+public class UserServiceImpl {
+
+}

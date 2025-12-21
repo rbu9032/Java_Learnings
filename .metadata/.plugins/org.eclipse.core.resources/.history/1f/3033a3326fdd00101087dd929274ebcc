@@ -1,0 +1,5 @@
+package com.rbu.restaurant.controller;
+
+public class RestaurantController {
+
+}

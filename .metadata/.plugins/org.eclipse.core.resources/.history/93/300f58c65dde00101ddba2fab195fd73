@@ -1,0 +1,29 @@
+package com.rbu.restaurant.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.rbu.restaurant.builder.OrderBuilder;
+import com.rbu.restaurant.builder.OrderDtoBuilder;
+import com.rbu.restaurant.dao.OrderRepository;
+import com.rbu.restaurant.dto.OrderRequestDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.model.Order;
+import com.rbu.restaurant.service.OrderService;
+
+@Service
+public class OrderServiceImpl implements OrderService {
+
+	private final OrderRepository orderRepository;
+
+	public OrderServiceImpl(OrderRepository orderRepository) {
+		super();
+		this.orderRepository = orderRepository;
+	}
+
+	@Override
+	public OrderResponseDto placeOrder(OrderRequestDto orderRequestDto) {
+		Order order = OrderBuilder.buildOrderFromOrderDto(orderRequestDto);
+		Order savedOrder = orderRepository.save(order);
+		return OrderDtoBuilder.buildOrderResponseDtoFromOrder(savedOrder);
+	}
+}

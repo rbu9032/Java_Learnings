@@ -1,0 +1,11 @@
+package com.rbu.restaurant.dto;
+
+public class RestaurantRequestDto {
+	
+	private String restaurantName;
+	
+	private String phoneNo;
+	
+	private AddressRequestDto addressRequestDto;
+
+}
