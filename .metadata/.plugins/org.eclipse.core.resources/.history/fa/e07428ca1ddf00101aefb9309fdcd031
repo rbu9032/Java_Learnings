@@ -1,0 +1,5 @@
+package com.rbu.restaurant.client;
+
+public interface RestaurantClient {
+
+}

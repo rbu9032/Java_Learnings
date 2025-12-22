@@ -2,6 +2,7 @@ package com.rbu.restaurant.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.rbu.restaurant.dto.DeliveryPartnerRequestDto;
 import com.rbu.restaurant.dto.DeliveryPartnerResponseDto;
 import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.dto.RestaurantCreationResponse;
+import com.rbu.restaurant.dto.RestaurantRequestDto;
 import com.rbu.restaurant.service.DeliveryPartnerService;
 
 @RestController
@@ -33,5 +36,14 @@ public class DeliveryPartnerController {
 	@PutMapping("/orderstatus/{orderId}")
 	public ResponseEntity<OrderResponseDto> updateStatus(@PathVariable(name = "orderId") long orderId, @RequestParam(name = "status") String status){
 		return deliveryService.updateOrderStatus(orderId, status);
+	}
+	@GetMapping("/restaurant-name/{restaurantId}")
+	public ResponseEntity<String> getRestaurantName(@PathVariable(name = "restaurantId") long restaurantId) {
+		return deliveryService.getRestaurantNameById(restaurantId);
+	}
+	
+	@PostMapping("/add-restaurant")
+	public ResponseEntity<RestaurantCreationResponse> addRestaurant(@RequestBody RestaurantRequestDto restaurantRequestDto){
+		return deliveryService.addRestaurant(restaurantRequestDto);
 	}
 }

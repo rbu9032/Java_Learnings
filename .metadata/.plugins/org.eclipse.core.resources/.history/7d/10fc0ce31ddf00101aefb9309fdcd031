@@ -1,0 +1,8 @@
+package com.rbu.restaurant.client;
+
+import org.springframework.cloud.openfeign.FeignClient;
+
+@FeignClient(name = "RestaurantManagement")
+public interface RestaurantClient {
+
+}

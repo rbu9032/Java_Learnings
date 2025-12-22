@@ -1,0 +1,16 @@
+package com.rbu.restaurant.service;
+
+import org.springframework.http.ResponseEntity;
+
+import com.rbu.restaurant.dto.DeliveryPartnerRequestDto;
+import com.rbu.restaurant.dto.DeliveryPartnerResponseDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+
+public interface DeliveryPartnerService {
+	
+	DeliveryPartnerResponseDto registerDeliveryPartner(DeliveryPartnerRequestDto deliveryRequestDto);
+
+	ResponseEntity<OrderResponseDto> updateOrderStatus(long orderId, String status);
+	
+	ResponseEntity<String> getRestaurantNameById(long restaurantId);
+}

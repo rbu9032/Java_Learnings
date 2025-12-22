@@ -1,5 +1,6 @@
 package com.rbu.restaurant.controller;
 
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,9 +22,12 @@ import com.rbu.restaurant.service.RestaurantService;
 public class RestaurantController {
 	
 	private final RestaurantService restaurantService;
+	
+	private Environment environment;
 	 
-	public RestaurantController(RestaurantService restaurantService) {
+	public RestaurantController(RestaurantService restaurantService, Environment environment) {
 		this.restaurantService = restaurantService;
+		this.environment = environment;
 	}
 	
 	@PostMapping("/add")
@@ -40,7 +44,8 @@ public class RestaurantController {
     @GetMapping("/name/{restaurantId}")
   	public ResponseEntity<String> getRestaurantNameById(@PathVariable(name = "restaurantId")long id){
       	RestaurantResponseDto restaurantResponseDto = restaurantService.getRestaurantById(id);
-      	return ResponseEntity.ok(restaurantResponseDto.getRestaurantName());
+      	String port = environment.getProperty("local.server.port");
+      	return ResponseEntity.ok(restaurantResponseDto.getRestaurantName()+port);
   	}
     
 //    Restaurant placing order(In RestaurantManagement we are calling OrderManagement to place order

@@ -5,10 +5,13 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+import com.rbu.restaurant.client.RestaurantClient;
 import com.rbu.restaurant.dao.DeliveryPartnerRepository;
 import com.rbu.restaurant.dto.DeliveryPartnerRequestDto;
 import com.rbu.restaurant.dto.DeliveryPartnerResponseDto;
 import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.dto.RestaurantCreationResponse;
+import com.rbu.restaurant.dto.RestaurantRequestDto;
 import com.rbu.restaurant.service.DeliveryPartnerService;
 
 @Service
@@ -18,10 +21,13 @@ public class DeliveryPartnerServiceImpl implements DeliveryPartnerService {
 	
 	private RestTemplate restTemplate;
 	
-	public DeliveryPartnerServiceImpl(DeliveryPartnerRepository deliveryPartnerRepository, RestTemplate restTemplate) {
+	private RestaurantClient restaurantClient;
+	
+	public DeliveryPartnerServiceImpl(DeliveryPartnerRepository deliveryPartnerRepository, RestTemplate restTemplate, RestaurantClient restaurantClient) {
 		super();
 		this.deliveryPartnerRepository = deliveryPartnerRepository;
 		this.restTemplate = restTemplate;
+		this.restaurantClient = restaurantClient;
 	}
 
 	@Override
@@ -37,6 +43,16 @@ public class DeliveryPartnerServiceImpl implements DeliveryPartnerService {
 				              null,
 				              OrderResponseDto.class);
 		 return orderResponseEntity;
+	}
+
+	@Override
+	public ResponseEntity<String> getRestaurantNameById(long restaurantId) {
+		return restaurantClient.getRestaurantNameById(restaurantId);
+	}
+
+	@Override
+	public ResponseEntity<RestaurantCreationResponse> addRestaurant(RestaurantRequestDto restaurantRequestDto) {
+		return restaurantClient.addRestaurant(restaurantRequestDto);
 	}
 
 }

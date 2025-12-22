@@ -1,0 +1,51 @@
+package com.rbu.restaurant.service.impl;
+
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.rbu.restaurant.client.RestaurantClient;
+import com.rbu.restaurant.dao.DeliveryPartnerRepository;
+import com.rbu.restaurant.dto.DeliveryPartnerRequestDto;
+import com.rbu.restaurant.dto.DeliveryPartnerResponseDto;
+import com.rbu.restaurant.dto.OrderResponseDto;
+import com.rbu.restaurant.service.DeliveryPartnerService;
+
+@Service
+public class DeliveryPartnerServiceImpl implements DeliveryPartnerService {
+	
+	private final DeliveryPartnerRepository deliveryPartnerRepository;
+	
+	private RestTemplate restTemplate;
+	
+	private RestaurantClient restaurantClient;
+	
+	public DeliveryPartnerServiceImpl(DeliveryPartnerRepository deliveryPartnerRepository, RestTemplate restTemplate, RestaurantClient restaurantClient) {
+		super();
+		this.deliveryPartnerRepository = deliveryPartnerRepository;
+		this.restTemplate = restTemplate;
+		this.restaurantClient = restaurantClient;
+	}
+
+	@Override
+	public DeliveryPartnerResponseDto registerDeliveryPartner(DeliveryPartnerRequestDto deliveryRequestDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<OrderResponseDto> updateOrderStatus(long orderId, String status) {
+			ResponseEntity<OrderResponseDto> orderResponseEntity = restTemplate.exchange("http://localhost:8003/orders/status/"+orderId +"?status=" + status,
+				              HttpMethod.PUT,
+				              null,
+				              OrderResponseDto.class);
+		 return orderResponseEntity;
+	}
+
+	@Override
+	public ResponseEntity<String> getRestaurantNameById(long restaurantId) {
+		return restaurantClient.getRestaurantNameById(restaurantId);
+	}
+
+}
