@@ -1,5 +1,6 @@
 package com.rbu.restaurant.controller;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,11 +24,19 @@ public class RestaurantController {
 	
 	private final RestaurantService restaurantService;
 	
+	@Value("${discount.food}")
+	private int discount;
+	
 	private Environment environment;
 	 
 	public RestaurantController(RestaurantService restaurantService, Environment environment) {
 		this.restaurantService = restaurantService;
 		this.environment = environment;
+	}
+	
+	@GetMapping("/discount")
+	public int discount() {
+		return discount;
 	}
 	
 	@PostMapping("/add")
