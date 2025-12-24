@@ -5108,3 +5108,108 @@ Contains: Missing org.springframework.cloud:spring-cloud-starter-config:jar:java
 !MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-config:jar:javadoc:4.3.1
 !SUBENTRY 2 org.eclipse.m2e.core 4 -1 2025-12-24 11:45:38.834
 !MESSAGE Missing org.springframework.cloud:spring-cloud-starter-config:jar:javadoc:4.3.1
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2025-12-24 16:25:12.244
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-gateway-server-webmvc:4.3.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway-server-webmvc:jar:sources:4.3.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-gateway-server-webmvc:jar:sources:4.3.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2025-12-24 16:25:12.244
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-gateway-server-webmvc:jar:sources:4.3.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 -1 2025-12-24 16:25:12.244
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-gateway-server-webmvc:jar:sources:4.3.3
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:12.315
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:12.329
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:12.341
+!MESSAGE buffering callback sts4.classpath.kDsZvDLo APIGateway false 122
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:12.342
+!MESSAGE executing callback sts4.classpath.kDsZvDLo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:12.616
+!MESSAGE executing callback sts4.classpath.kDsZvDLo SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:21.130
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:21.152
+!MESSAGE classpath=122 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:21.169
+!MESSAGE buffering callback sts4.classpath.kDsZvDLo APIGateway false 122
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:21.171
+!MESSAGE executing callback sts4.classpath.kDsZvDLo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:25:21.230
+!MESSAGE executing callback sts4.classpath.kDsZvDLo SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:28:44.532
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:28:44.556
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:28:44.569
+!MESSAGE buffering callback sts4.classpath.kDsZvDLo APIGateway false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:28:44.571
+!MESSAGE executing callback sts4.classpath.kDsZvDLo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:28:44.815
+!MESSAGE executing callback sts4.classpath.kDsZvDLo SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:29:19.988
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:29:20.001
+!MESSAGE classpath=138 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:29:20.008
+!MESSAGE buffering callback sts4.classpath.kDsZvDLo APIGateway false 138
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:29:20.009
+!MESSAGE executing callback sts4.classpath.kDsZvDLo 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-12-24 16:29:20.053
+!MESSAGE executing callback sts4.classpath.kDsZvDLo SUCCESS [done]
+
+!ENTRY org.eclipse.jdt.core 4 4 2025-12-24 16:35:04.096
+!MESSAGE mergeWith - Failed to rename index file:/C:/Users/susmi/Desktop/JAVA/Microservices/.metadata/.plugins/org.eclipse.jdt.core/1865797976.index
+!STACK 0
+java.nio.file.FileSystemException: C:\Users\susmi\Desktop\JAVA\Microservices\.metadata\.plugins\org.eclipse.jdt.core\1865797976.index.tmp -> C:\Users\susmi\Desktop\JAVA\Microservices\.metadata\.plugins\org.eclipse.jdt.core\1865797976.index: The process cannot access the file because it is being used by another process
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsFileCopy.move(WindowsFileCopy.java:403)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.move(WindowsFileSystemProvider.java:293)
+	at java.base/java.nio.file.Files.move(Files.java:1432)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:597)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:230)
+	at org.eclipse.jdt.internal.core.index.MetaIndex.save(MetaIndex.java:100)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveMetaIndex(IndexManager.java:1248)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:1224)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:819)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:422)
+	at java.base/java.lang.Thread.run(Thread.java:833)
