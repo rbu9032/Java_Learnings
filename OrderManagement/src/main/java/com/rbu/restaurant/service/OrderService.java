@@ -9,4 +9,6 @@ public interface OrderService {
 	
 	OrderResponseDto updateOrderStatus(long orderId, String status);
 
+	String getRestaurantNameById(long restaurantId);
+
 }

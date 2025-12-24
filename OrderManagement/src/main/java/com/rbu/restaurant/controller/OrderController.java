@@ -2,6 +2,7 @@ package com.rbu.restaurant.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -34,5 +35,10 @@ public class OrderController {
 	public ResponseEntity<OrderResponseDto> updateOrderStatus(@PathVariable(name = "orderId")long orderId, @RequestParam(name = "status")String status){
 		OrderResponseDto updateOrderStatus = orderService.updateOrderStatus(orderId, status);
 		return ResponseEntity.ok(updateOrderStatus);
+	}
+	@GetMapping("/restaurants/name/{restaurantId}")
+	public String getRestaurantName(@PathVariable(name = "restaurantId")long restaurantId) {
+		return orderService.getRestaurantNameById(restaurantId);
+		
 	}
 }

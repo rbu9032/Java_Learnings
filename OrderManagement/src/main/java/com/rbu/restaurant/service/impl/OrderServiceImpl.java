@@ -12,6 +12,8 @@ import com.rbu.restaurant.exception.OrderNotFoundException;
 import com.rbu.restaurant.model.Order;
 import com.rbu.restaurant.service.OrderService;
 
+import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
+
 @Service
 public class OrderServiceImpl implements OrderService {
 
@@ -49,6 +51,17 @@ public class OrderServiceImpl implements OrderService {
 	private String fetchRestaurantName(Order order) {
 		String restaurantName = restTemplate.getForObject("http://RestaurantManagement/restaurants/name/"+order.getRestaurantId(), String.class);
 		return restaurantName;
+	}
+
+	@Override
+	@CircuitBreaker(name="restaurantManagementCB", fallbackMethod="fallBackForRestaurantName")
+	public String getRestaurantNameById(long restaurantId) {
+		return restTemplate.getForObject("http://RestaurantManagement/restaurants/name/"+restaurantId, String.class);
+		
+	}
+	
+	public String fallBackForRestaurantName(long restaurantId, Throwable throwable) {
+		return "Restaurant Service is down";
 	}
 
 }
