@@ -18,4 +18,5 @@
     <fullyQualifiedTypeName name="com.rbu.restaurant.dto.OrderResponseDto"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 </qualifiedTypeNameHistroy>

@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\susmi\Desktop\JAVA\Microservices\APIGateway"/>
+			<item value="C:\Users\susmi\Desktop\JAVA\Microservices\ConfigServer"/>
 			<item value="C:\Users\susmi\Desktop\JAVA\Microservices\EurekaServer"/>
 			<item value="C:\Users\susmi\Desktop\JAVA\Microservices\RestaurantManagement"/>
 		</list>
